@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640,user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	document.body.style.height=getView().h+"px";
+</script>
+<section class="page pageShow" id="welcome">
+	<div class="tree"> 
+		<img src="img/tree.jpg">
+		<div class="welcome2">
+			<img class="title" src="img/title.png">
+			<span class="shark"></span>
+		</div>
+		<img class="title2" src="img/title2.png">
+		<span class="cloud"></span>
+		<span class="cloud"></span>
+		<span class="cloud"></span>
+	</div>
+	<h3 id="logo">
+		<img src="img/logo.png">
+	</h3>
+</section>
+<script type="text/javascript">
+	fnLoad();
+</script>
+<section class="page" id="over">
+	<div class="tree"> 
+		<img src="img/tree.jpg">
+		<div class="welcome2">
+			<img src="img/tranks2.png">
+		</div>
+		<img class="title2" src="img/title2.png">
+		<span class="cloud"></span>
+		<span class="cloud"></span>
+		<span class="cloud"></span>
+	</div>
+	<input type="button" value="重新评价" class="btn submit"></input>
+</section>
+<section class="page" id="form">
+	<section class="tags" id="formTag">
+		<h2>给视频添加标签</h2>
+		<label>
+			<input type="radio" name="tags2" value="服务好"></input>
+			<span>服务好</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="景色赞"></input>
+			<span>景色赞</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="千篇一律"></input>
+			<span>千篇一律</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="看人海"></input>
+			<span>看人海</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="挤爆了"></input>
+			<span>挤爆了</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="赏心悦目"></input>
+			<span>赏心悦目</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="环境差"></input>
+			<span>环境差</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="东西贵"></input>
+			<span>东西贵</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="景色宜人"></input>
+			<span>景色宜人</span>
+		</label>
+		<label>
+			<input type="radio" name="tags2" value="热别好"></input>
+			<span>特别好</span>
+		</label>
+	</section>
+	<textarea class="formText" placeholder="（选填：说点什么呢~~）" rows="5"></textarea>
+	<input type="tel" class="formText" placeholder="（选填：请输入您的电话号）" ></input>
+	<input type="button" class="btn" value="上传"></input>
+</section>
+<section class="page" id="news">
+	<img src="img/news.png">
+	<h2>请上传旅游投诉以及突发事件线索</h2>
+	<section class="file">
+		<label>
+			<input type="file"></input>
+			<span>导入视频</span>
+		</label>
+		<label>
+			<input type="file"></input>
+			<span>导入照片</span>
+		</label>
+	</section>
+	<p class="info"></p>
+</section>
+<section class="page" id="mask">跳转页</section>
+<section class="page pageShow" id="index">
+	<section id="pageWrap">
+		<section id="tabPic">
+			<ul id="picList">
+				<li><img src="img/1.jpg"></li>
+				<li><img src="img/2.jpg"></li>
+				<li><img src="img/3.jpg"></li>
+				<li><img src="img/4.jpg"></li>
+				<li><img src="img/5.jpg"></li>
+			</ul>
+			<section class="picMask">
+				<p>九寨沟风景区</p>
+				<nav>
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</nav>
+			</section>
+		</section>
+
+		<a href="javascript:;" class="newBtn">
+			<em>新闻线索</em>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+		<section id="score">
+			<h2>给景区评分</h2>
+			<ul id="scoreList">
+				<li>
+					<span>综合印象</span>
+					<nav>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</nav>
+					<input type="hidden" value="0"></input>
+				</li>
+				<li>
+					<span>服务指数</span>
+					<nav>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</nav>
+					<input type="hidden" value="0"></input>
+				</li>
+				<li>
+					<span>消费指数</span>
+					<nav>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</nav>
+					<input type="hidden" value="0"></input>
+				</li>
+			</ul>
+		</section>
+
+		<section class="tags" id="indexTag">
+			<h2>给景区添加标签</h2>
+			<label>
+				<input type="radio" name="tags" value="服务好"></input>
+				<span>服务好</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="景色赞"></input>
+				<span>景色赞</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="千篇一律"></input>
+				<span>千篇一律</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="看人海"></input>
+				<span>看人海</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="挤爆了"></input>
+				<span>挤爆了</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="赏心悦目"></input>
+				<span>赏心悦目</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="环境差"></input>
+				<span>环境差</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="东西贵"></input>
+				<span>东西贵</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="景色宜人"></input>
+				<span>景色宜人</span>
+			</label>
+			<label>
+				<input type="radio" name="tags" value="热别好"></input>
+				<span>特别好</span>
+			</label>
+		</section>
+
+		<p class="info"></p>
+		<input type="button" value="提交" class="btn submit"></input>
+	</section>
+</section>
+</body>
+</html>
